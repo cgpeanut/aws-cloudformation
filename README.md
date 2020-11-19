@@ -18,18 +18,18 @@ chapter 2:
 
 chapter 3: cloudformation fundamentals
 - terminology
-- template anatomy
+- template anatomy: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html
 
 chapter 4: cloudformation features
-- intrinsic functions
+- intrinsic functions: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html
 - lab: intrinsic functions
 - multiple resources
 - lab: multiple resources
-- pseudo parameters
+- pseudo parameters: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html
 - lab: pseudo parameters
-- mappings 
+- mappings: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html 
 - lab: mappings
-- input parameters
+- input parameters:https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
 - lab: input parameters
 - outputs
     https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/outputs-section-structure.html
@@ -42,4 +42,10 @@ chapter 5: setting up EC2 instance
     https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-helper-scripts-reference.html
 - cloudformation init
 - lab: setting up an EC2 instance
-- 
+
+chapter 6: Updating our stack with change sets
+- introduction
+  - cloudformation resource types reference: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+  - cloudformation update behavios of stack resources: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html
+- lab part 1: change sets
+- lab part 2: change sets 
