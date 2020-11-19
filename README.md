@@ -4,7 +4,8 @@
 chapter 1: 
 - introduction
     YAML for cloudformation:
-    https://aws.amazon.com/blogs/mt/the-virtues-of-yaml-cloudformation-and-using-cloudformation-designer-to-convert-json-to-yaml/
+    <a href="https://aws.amazon.com/blogs/mt/the-virtues-of-yaml-cloudformation-and-using-cloudformation-designer-to-convert-json-to-yaml/"  target="_blank"><img src="http://img.youtube.com/vi/EE1Z_9F98vU/0.jpg" alt="IMAGE ALT TEXT HERE" width="530" height="360" /></a>
+
     cloudformation for template formats: 
     (https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html)
 - files for hands on lab
