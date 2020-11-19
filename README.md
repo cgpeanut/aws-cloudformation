@@ -11,6 +11,9 @@ chapter 1:
     github repo: (https://github.com/ACloudGuru/intro-to-CloudFormation_AC)
     project files: (https://learn.acloud.guru/course/intro-aws-cloudformation/learn/infrastructure-in-the-cloud/42ad57ef-44e6-c08f-370d-b3309735af40/watch)
 
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=EE1Z_9F98vU" target="_blank"><img src="http://img.youtube.com/vi/EE1Z_9F98vU/0.jpg" alt="IMAGE ALT TEXT HERE" width="530" height="360" /></a>
+
+
 chapter 2: 
 - managing infrastructure in the cloud
 - infrastructure as code
