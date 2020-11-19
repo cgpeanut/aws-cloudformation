@@ -31,9 +31,9 @@ chapter 4: cloudformation features
 - lab: intrinsic functions
 - multiple resources
 - lab: multiple resources
-- pseudo parameters: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html
+- pseudo parameters: <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html" target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 - lab: pseudo parameters
-- mappings: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html 
+- mappings: <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html" target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 - lab: mappings
 - input parameters:https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/parameters-section-structure.html
 - lab: input parameters
