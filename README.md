@@ -1,7 +1,10 @@
 # aws-cloudformation
+
+
 chapter 1: 
 - introduction
 - files for hands on lab
+
 chapter 2: 
 - managing infrastructure in the cloud
 - infrastructure as code
