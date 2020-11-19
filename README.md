@@ -47,5 +47,6 @@ chapter 6: Updating our stack with change sets
 - introduction
   - cloudformation resource types reference: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
   - cloudformation update behavios of stack resources: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html
-- lab part 1: change sets
-- lab part 2: change sets 
+- lab part 1: change sets: cloudformation resource reference: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+  cloudformation update behaviors of stack resources: https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html
+- lab part 2: change sets: 
