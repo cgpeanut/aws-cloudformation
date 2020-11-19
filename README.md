@@ -8,8 +8,10 @@ chapter 1:
 
     cloudformation for template formats: 
     <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"  target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
+
 - files for hands on lab
-    github repo: <a href="https://github.com/ACloudGuru/intro-to-CloudFormation_AC"target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" 
+    github repo: <a href="https://github.com/ACloudGuru/intro-to-CloudFormation_AC" target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
+
     project files: (https://learn.acloud.guru/course/intro-aws-cloudformation/learn/infrastructure-in-the-cloud/42ad57ef-44e6-c08f-370d-b3309735af40/watch)
 
 
