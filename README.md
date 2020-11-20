@@ -43,7 +43,7 @@ Mappings:
       AMIID: ami-c55673a0
 Resources:
   EC2Instance:
-    Type: AWS::EC2::Instance                     
+    Type: AWS::EC2::Instance
     Properties:
       ImageId:
         !FindInMap                                 # This is an example of the short form YAML FindInMap function
@@ -71,9 +71,7 @@ Resources:
         -
           Key: Environment
           Value: Development
-
 ``` 
-```
 
   cloudformation for template formats: 
     <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"  target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
