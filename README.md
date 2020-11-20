@@ -128,9 +128,14 @@ The following example shows a YAML-formatted template fragment.
 <img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/yaml-template.png"/>
 
 
-
 chapter 4: cloudformation features
 - intrinsic functions: <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html" target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
+
+AWS CloudFormation provides several built-in functions that help you manage your stacks. Use intrinsic functions in your templates to assign values to properties that are not available until runtime.
+
+Note: 
+You can use intrinsic functions only in specific parts of a template. Currently, you can use intrinsic functions in resource properties, outputs, metadata attributes, and update policy attributes. You can also use intrinsic functions to conditionally create stack resources.
+
 - lab: intrinsic functions
 - multiple resources
 - lab: multiple resources
