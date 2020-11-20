@@ -125,7 +125,7 @@ YAML
 
 The following example shows a YAML-formatted template fragment.
 
-<img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png"/>
+<img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/yaml-template.png"/>
 
 
 
