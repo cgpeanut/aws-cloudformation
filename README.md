@@ -81,8 +81,9 @@ Resources:
   cloudformation for template formats: 
     <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"  target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 
+You can add comments to the AWS CloudFormation templates you create outside of Designer. The following example shows a YAML template with inline comments. 
 ```
-    AWSTemplateFormatVersion: "2010-09-09"
+AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template
 Resources:
   MyEC2Instance: #An inline comment
