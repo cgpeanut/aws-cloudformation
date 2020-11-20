@@ -17,7 +17,6 @@ YAML also supports comments using the # character. CloudFormation templates can 
 Let’s look at a code sample. The following YAML and JSON CloudFormation templates perform the same function, they deploy an Amazon Linux EC2 instance serving a webpage via Apache HTTP Server.
 
 ``` 
-```
 
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
@@ -71,7 +70,7 @@ Resources:
         -
           Key: Environment
           Value: Development
-``` 
+```
 
   cloudformation for template formats: 
     <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"  target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
