@@ -7,9 +7,73 @@ chapter 1:
   YAML for cloudformation:
     <a href="https://aws.amazon.com/blogs/mt/the-virtues-of-yaml-cloudformation-and-using-cloudformation-designer-to-convert-json-to-yaml/"  target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 
-AWS CloudFormation provides the framework to define infrastructure-as-code in AWS.  advantages of using YAML over JSON, as well as how to overcome some of the challenges in getting started writing CloudFormation in YAML.
+AWS CloudFormation provides the framework to define infrastructure-as-code in AWS.  Advantages of using YAML over JSON, as well as how to overcome some of the challenges in getting started writing CloudFormation in YAML.
 
+The virtues of YAML
+YAML CloudFormation fully supports all of the same features and functions as JSON CloudFormation with some additional features to reduce the length of code and increase readability. Say goodbye to the curly braces and most of the quotation marks of JSON when you use YAML. YAML uses parent nodes, child nodes, and indentation to denote hierarchy rather than curly braces and commas as in JSON.
 
+YAML also supports comments using the # character. CloudFormation templates can get complex. Including key comments in the code can make it easier to understand, especially as teams get started with CloudFormation and develop templates together.
+
+Let’s look at a code sample. The following YAML and JSON CloudFormation templates perform the same function, they deploy an Amazon Linux EC2 instance serving a webpage via Apache HTTP Server.
+
+``` 
+```
+
+AWSTemplateFormatVersion: 2010-09-09
+Parameters:
+  SubnetID:
+    Type: AWS::EC2::Subnet::Id
+    Description: Subnet to deploy EC2 instance into
+  SecurityGroupIDs:
+    Type: List<AWS::EC2::SecurityGroup::Id>
+    Description: List of Security Groups to add to EC2 instance
+  KeyName:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: >-
+      Name of an existing EC2 KeyPair to enable SSH access to the instance
+  InstanceType:
+    Description: EC2 instance type
+    Type: String
+    Default: t2.micro
+Mappings:
+  AWSRegionToAMI:
+    us-east-1:
+      AMIID: ami-0b33d91d
+    us-east-2:
+      AMIID: ami-c55673a0
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance                     
+    Properties:
+      ImageId:
+        !FindInMap                                 # This is an example of the short form YAML FindInMap function
+          - AWSRegionToAMI                         # It accepts three parameters each denoted by a hyphen (-)
+          - !Ref AWS::Region
+          - AMIID
+      InstanceType: !Ref InstanceType
+      KeyName: !Ref KeyName
+      SecurityGroupIds: !Ref SecurityGroupIDs
+      SubnetId: !Ref SubnetID
+      UserData:
+        Fn::Base64:                                # YAML makes userdata much cleaner
+          !Sub |
+              #!/bin/bash -ex
+              yum install -y httpd;
+              echo "<html>I love YAML CloudFormation!!</html>" > /var/www/html/index.html;
+              cd /var/www/html;
+              chmod 755 index.html;
+              service httpd start;
+              chkconfig httpd on;
+      Tags:                                      # Tags are an example of a sequence of mappings in YAML,
+        -                                        # each key/value pair is separated by a hyphen
+          Key: Name
+          Value: CloudFormation Test - YAML      
+        -
+          Key: Environment
+          Value: Development
+
+``` 
+```
 
   cloudformation for template formats: 
     <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"  target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
