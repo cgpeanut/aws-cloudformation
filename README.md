@@ -81,6 +81,26 @@ Resources:
   cloudformation for template formats: 
     <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html"  target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 
+```
+    AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample template
+Resources:
+  MyEC2Instance: #An inline comment
+    Type: "AWS::EC2::Instance"
+    Properties: 
+      ImageId: "ami-0ff8a91507f77f867" #Another comment -- This is a Linux AMI
+      InstanceType: t2.micro
+      KeyName: testkey
+      BlockDeviceMappings:
+        -
+          DeviceName: /dev/sdm
+          Ebs:
+            VolumeType: io1
+            Iops: 200
+            DeleteOnTermination: false
+            VolumeSize: 20
+```
+
 - files for hands on lab
     github repo: <a href="https://github.com/ACloudGuru/intro-to-CloudFormation_AC" target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 
