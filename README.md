@@ -119,6 +119,16 @@ chapter 3: cloudformation fundamentals
 - template anatomy: 
 <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html" target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 
+A template is a JSON- or YAML-formatted text file that describes your AWS infrastructure. The following examples show an AWS CloudFormation template structure and its sections.
+
+YAML
+
+The following example shows a YAML-formatted template fragment.
+
+<img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png"/>
+
+
+
 chapter 4: cloudformation features
 - intrinsic functions: <a href="https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html" target="_blank"><img src="https://github.com/cgpeanut/aws-cloudformation/blob/main/images/cloud.png" alt="IMAGE ALT TEXT HERE" width="35" height="25" /></a>
 - lab: intrinsic functions
