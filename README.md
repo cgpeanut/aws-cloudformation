@@ -18,6 +18,8 @@ Let’s look at a code sample. The following YAML and JSON CloudFormation templa
 
 ``` 
 
+YAML template
+
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
   SubnetID:
